@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/bg-pattern-top.svg") , url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat , no-repeat;
+    background-position: bottom 15rem right 42em , top 23.5rem left 39em;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+.heading {
+    color: hsl(229, 23%, 23%);
+    padding-top: 4rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+span {
+    padding-left: 5px;
+    color: hsl(227, 10%, 46%);
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.victor_img {
+    border: solid white 0.3rem;
+    position: absolute;
+    top: 5.5rem;
+    right: 7.5rem;
+    border-radius: 100%;
+}
+
+.content {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.bottom {
+    border-top: solid hsl(0, 0%, 59%) 0.1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+.bottom_h1 {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 1.2rem;
+    padding-bottom: 0.2rem;
+}
+.bottom_p {
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+    font-size: 0.9rem;
+}
+
+.image_top {
+    z-index: -1;
+    position: absolute;
+    bottom: 15rem;
+    right: 48rem;
+}
+.image_bottom {
+    z-index: -1;
+    position: absolute;
+    top: 30rem;
+    left: 80rem;
+}
+
+@media only screen and (max-width: 430px) {
+    body {
+        background-position: bottom 14rem right 12rem , top 16rem left 12rem;
+    }
+}
